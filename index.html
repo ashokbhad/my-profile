@@ -6,55 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
     <link rel="shortcut icon" href="assets/website-logo.PNG" type="image/x-icon">
+    <!-- CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header {
+            padding: 20px;
+            background-color: rgb(216, 244, 245);
+        }
+
+        .navtext {
+            color: blueviolet;
+            padding-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: brown;
+            background-color: aliceblue;
+        }
+
+        #summary {
+            font-style: italic;
+            font-size: larger;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .thtable {
+            /* padding-right: 20px;
+            padding-left: 5px; */
+            padding: 30px;
+        }
+
+        .tdtable {
+            /* padding-right: 20px;
+            padding-left: 5px; */
+            padding: 20px;
+
+        }
+
+        #resume {
+            color: orange;
+            font-weight: bolder;
+        }
+
+        .heading {
+            color: cadetblue;
+            font-style: italic;
+        }
+
+        .header-info {
+            margin-right: 40px;
+            margin-left: 10px;
+        }
+
+        #navsection {
+            color: rgb(81, 16, 141);
+            background-color: aliceblue;
+
+
+        }
+
+        #resume-text {
+            margin-left: 10px;
+        }
+
+        li {
+            padding-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Header section -->
+    <!-- Header Section -->
     <header>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill"
-                viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-            </svg> &nbsp;Ashok Bhad &nbsp; &nbsp; &nbsp;
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-            </svg> &nbsp; 86057030 18 &nbsp; &nbsp; &nbsp;
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                <path
-                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-            </svg> &nbsp; ashokbhad321@gmail.com &nbsp; &nbsp;&nbsp;
-            <a href="assets/resume.pdf" download>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5" />
-                </svg> RESUME</a>
-        </p>
+        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+        <span class="header-info">Ashok Bhad</span>
+        <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+        <span class="header-info">8605 7030 18</span>
+        <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+        <span class="header-info">ashokbhad321@gmail.com</span>
+        <a href="assets/resume.pdf" download id="resume"> <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span
+                id="resume-text">RESUME</span> </a>
     </header>
     <hr>
 
     <!-- Navigation Section -->
-    <nav>
-        <a href="#Home">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="#techStack">TECH STACK</a> &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="#project">PROJECTS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="#education">EDUCATION</a> &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="others.html" target="_blank">OTHERS</a>
-    </nav>
+    <section>
+        <nav id="navsection">
+            <a href="#Home"><span class="navtext"><b>HOME</b></span></a>
+            <a href="#techStack"><span class="navtext"><b>TECH STACK</b></span></a>
+            <a href="#project"><span class="navtext"><b>PROJECTS</b></span></a>
+            <a href="#education"><span class="navtext"><b>EDUCATION</b></span></a>
+            <a href="personalDetail.html" target="_blank"><span class="navtext"><b>PERSONAL DETAILS</b></span></a>
+            <a href="others.html" target="_blank"><span class="navtext"><b>OTHERS</b></span></a>
+        </nav>
+    </section>
     <hr>
 
     <!-- Main Section -->
     <section>
         <!-- Home Section -->
         <section id="Home">
-            <h2>Professional Summary &nbsp;&nbsp;&nbsp;</h2>
+            <h2 id="summary"">Professional Summary</h2>
             <ul>
-                <li>Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5,
-                    CSS3, Bootstrap 5, JavaScript, TypeScript</li>
+                <li>Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
                 <li>Experience on working with version control system -GIT and GitHub</li>
                 <li>Experience working with JIRA for user stories and bug tracking</li>
                 <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
@@ -62,56 +118,56 @@
                 <li>Good working experience under Agile methodologies environment</li>
                 <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
                 <li>Knowledge of NodeJS</li>
-                <li>Ability to work with people at all levels in the program in using Chrome Developer Tool
-                    for debugging and troubleshooting the code</li>
+                <li>Ability to work with people at all levels in the program in using Chrome Developer Tool for debugging and troubleshooting the code</li>
             </ul>
         </section>
         <hr>
         <!-- Technology stack section -->
-        <section id="techStack">
-            <h2>My Technology Stack</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Sr.No</th>
-                        <th>Technology Stack</th>
-                        <th>Rating</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>HTML5</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>CSS3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>JavaScript</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Angular</td>
-                        <td>3</td>
-                    </tr>
-
-                </tbody>
-            </table>
+        <section id=" techStack">
+                <h2>My Technology Stack</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th><span class="thtable">Sr.No</span></th>
+                            <th><span class="thtable">Technology Stack</span></th>
+                            <th><span class="thtable">Rating</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tdtable">1</span></td>
+                            <td><span class="tdtable">HTML5</span></td>
+                            <td><span class="tdtable">4</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tdtable">2</span></td>
+                            <td><span class="tdtable">CSS3</span></td>
+                            <td><span class="tdtable">4</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tdtable">3</span></td>
+                            <td><span class="tdtable">JavaScript</span></td>
+                            <td><span class="tdtable">4</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tdtable">3</span></td>
+                            <td><span class="tdtable">Angular</span></td>
+                            <td><span class="tdtable">3</span></td>
+                        </tr>
+                    </tbody>
+                </table>
         </section>
         <hr>
+
         <!-- Project Section -->
+
         <section id="project">
             <h2>Project Details</h2>
-            <p><strong>Name:&nbsp;&nbsp;<u>Student Management</u></strong></p>
-            <p><strong><u>Environment:</u></strong>&nbsp;&nbsp; Angular 8, TypeScript, JavaScript (ES6),
-                Bootstrap,GitHub,Desktop GitHub, Agile and JIRA, IDE - VS Code</p>
-            <p><strong>Team
-                    Size:&nbsp;06</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Duration:</strong>&nbsp;
+            <p><strong><span class="spaceremove">Name: </span><u>Student Management</u></strong></p>
+            <p><strong><u>Environment:</u></strong><span class="spaceremove">   Angular 8, TypeScript, JavaScript (ES6),
+                Bootstrap,GitHub,Desktop GitHub, Agile and JIRA, IDE - VS Code</span></p>
+            <p><strong><span class="spaceremove">Team
+                Size: 06     </span></strong><strong>Duration:</strong> 
                 2021-1<sup>st</sup>-July till <u><i>present</i></u></p>
             <p><b>Project Description:</b> This project is mainly used for student management in colleges, where it
                 helps to manage student record like <br>
@@ -125,53 +181,52 @@
                 <li>Worked in GIT as a version control</li>
                 <li>Used JIRA for bug tracking</li>
                 <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint
-                    retrospective
-                    meetings</li>
+                    retrospective meetings</li>
                 <li>involved in fixing technical issues in production environment</li>
             </ul>
             <hr>
+
         </section>
         <!-- Education Section -->
+
         <section id="education">
             <h2>Education Details</h2>
             <table border="1">
                 <thead>
                     <strong>
                         <tr>
-                            <td><b>Qualification</b></td>
-                            <td><b>School / College</b></td>
-                            <td><b>Board / University</b></td>
-                            <td><b>Year</b></td>
-                            <td><b>Percentage</b></td>
+                            <td><span class="tdtable"><b>Qualification</b></span></td>
+                            <td><span class="tdtable"><b>School / College</b></span></td>
+                            <td><span class="tdtable"><b>Board / University</b></span></td>
+                            <td><span class="tdtable"><b>Year</b></span></td>
+                            <td><span class="tdtable"><b>Percentage</b></span></td>
                         </tr>
                     </strong>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>BE</td>
-                        <td>Government College of Engineering Chandrapur</td>
-                        <td>Gadchiroli</td>
-                        <td>2023</td>
-                        <td>65.50%</td>
+                        <td><span class="tdtable">BE</span></td>
+                        <td><span class="tdtable">Government College of Engineering Chandrapur</span></td>
+                        <td><span class="tdtable">Gadchiroli</span></td>
+                        <td><span class="tdtable">2023</span></td>
+                        <td><span class="tdtable">65.50%</span></td>
                     </tr>
                     <tr>
-                        <td>Diploma</td>
-                        <td>Government Polytechnic Jintur, Parbhani</td>
-                        <td>Autonomous</td>
-                        <td>2020</td>
-                        <td>76.20%</td>
+                        <td><span class="tdtable">Diploma</span></td>
+                        <td><span class="tdtable">Government Polytechnic Jintur, Parbhani</span></td>
+                        <td><span class="tdtable">Autonomous</span></td>
+                        <td><span class="tdtable">2020</span></td>
+                        <td><span class="tdtable">76.20%</span></td>
                     </tr>
                     <tr>
-                        <td>SSC</td>
-                        <td>AVV High School Purna, Parbhani</td>
-                        <td>State Board</td>
-                        <td>2016</td>
-                        <td>64.80%</td>
+                        <td><span class="tdtable">SSC</span></td>
+                        <td><span class="tdtable">AVV High School Purna, Parbhani</span></td>
+                        <td><span class="tdtable">State Board</span></td>
+                        <td><span class="tdtable">2016</span></td>
+                        <td><span class="tdtable">64.80%</span></td>
                     </tr>
                 </tbody>
-
             </table>
-
         </section>
         <hr>
 
