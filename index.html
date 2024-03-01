@@ -8,41 +8,26 @@
     <link rel="shortcut icon" href="assets/website-logo.PNG" type="image/x-icon">
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         header {
             padding: 20px;
             background-color: rgb(216, 244, 245);
+            font-family: "Roboto", sans-serif;
         }
 
         .navtext {
-            color: blueviolet;
-            padding-right: 20px;
-        }
-
-        a {
             text-decoration: none;
-            color: brown;
-            background-color: aliceblue;
+            padding: 10px;
         }
 
-        #summary {
-            font-style: italic;
-            font-size: larger;
-            font-weight: bolder;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .thtable {
-            /* padding-right: 20px;
-            padding-left: 5px; */
-            padding: 30px;
-        }
-
-        .tdtable {
-            /* padding-right: 20px;
-            padding-left: 5px; */
-            padding: 20px;
-
+        #navRobo{
+            font-family: "Roboto", sans-serif;
         }
 
         #resume {
@@ -53,6 +38,12 @@
         .heading {
             color: cadetblue;
             font-style: italic;
+            text-shadow: 4px 4px 4px rgba(89, 55, 55, 0.6);
+            font-family: "Poppins", sans-serif;
+        }
+
+        #roleResponsibility {
+            font-family: "Poppins", sans-serif;
         }
 
         .header-info {
@@ -60,19 +51,36 @@
             margin-left: 10px;
         }
 
-        #navsection {
-            color: rgb(81, 16, 141);
-            background-color: aliceblue;
-
-
-        }
-
         #resume-text {
             margin-left: 10px;
         }
 
-        li {
-            padding-top: 20px;
+        table,
+        tr,
+        th,
+        td {
+            border: 2px solid rgb(217, 204, 179);
+            border-collapse: collapse;
+            width: 100px;
+        }
+
+        td,
+        th {
+            padding: 10px;
+        }
+
+        #techTable {
+            width: 50%;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .porDetails {
+            font-family: "Poppins", sans-serif;
+        }
+
+        #listSummary {
+            font-family: "Poppins", sans-serif;
+
         }
     </style>
 </head>
@@ -86,14 +94,13 @@
         <span class="header-info">8605 7030 18</span>
         <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
         <span class="header-info">ashokbhad321@gmail.com</span>
-        <a href="assets/resume.pdf" download id="resume"> <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span
+        <a href="assets/resume.pdf" download id="resume"><i class="fa fa-download fa-lg" aria-hidden="true"></i> <span
                 id="resume-text">RESUME</span> </a>
     </header>
-    <hr>
 
     <!-- Navigation Section -->
     <section>
-        <nav id="navsection">
+        <nav id="navRobo">
             <a href="#Home"><span class="navtext"><b>HOME</b></span></a>
             <a href="#techStack"><span class="navtext"><b>TECH STACK</b></span></a>
             <a href="#project"><span class="navtext"><b>PROJECTS</b></span></a>
@@ -102,15 +109,15 @@
             <a href="others.html" target="_blank"><span class="navtext"><b>OTHERS</b></span></a>
         </nav>
     </section>
-    <hr>
 
     <!-- Main Section -->
     <section>
         <!-- Home Section -->
         <section id="Home">
-            <h2 id="summary"">Professional Summary</h2>
-            <ul>
-                <li>Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
+            <h2 class="heading">Professional Summary</h2>
+            <ul id="listSummary">
+                <li>Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5,
+                    CSS3, Bootstrap 5, JavaScript, TypeScript</li>
                 <li>Experience on working with version control system -GIT and GitHub</li>
                 <li>Experience working with JIRA for user stories and bug tracking</li>
                 <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
@@ -118,63 +125,70 @@
                 <li>Good working experience under Agile methodologies environment</li>
                 <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
                 <li>Knowledge of NodeJS</li>
-                <li>Ability to work with people at all levels in the program in using Chrome Developer Tool for debugging and troubleshooting the code</li>
+                <li>Ability to work with people at all levels in the program in using Chrome Developer Tool for
+                    debugging and troubleshooting the code</li>
             </ul>
         </section>
         <hr>
+
         <!-- Technology stack section -->
-        <section id=" techStack">
-                <h2>My Technology Stack</h2>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th><span class="thtable">Sr.No</span></th>
-                            <th><span class="thtable">Technology Stack</span></th>
-                            <th><span class="thtable">Rating</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="tdtable">1</span></td>
-                            <td><span class="tdtable">HTML5</span></td>
-                            <td><span class="tdtable">4</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="tdtable">2</span></td>
-                            <td><span class="tdtable">CSS3</span></td>
-                            <td><span class="tdtable">4</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="tdtable">3</span></td>
-                            <td><span class="tdtable">JavaScript</span></td>
-                            <td><span class="tdtable">4</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="tdtable">3</span></td>
-                            <td><span class="tdtable">Angular</span></td>
-                            <td><span class="tdtable">3</span></td>
-                        </tr>
-                    </tbody>
-                </table>
+
+        <section id="techStack">
+            <h2 class="heading">My Technology Stack</h2>
+            <table id="techTable">
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Technology Stack</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML5</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CSS3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>JavaScript</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Angular</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            
+            </table>
         </section>
         <hr>
 
         <!-- Project Section -->
 
-        <section id="project">
-            <h2>Project Details</h2>
-            <p><strong><span class="spaceremove">Name: </span><u>Student Management</u></strong></p>
-            <p><strong><u>Environment:</u></strong><span class="spaceremove">   Angular 8, TypeScript, JavaScript (ES6),
-                Bootstrap,GitHub,Desktop GitHub, Agile and JIRA, IDE - VS Code</span></p>
-            <p><strong><span class="spaceremove">Team
-                Size: 06     </span></strong><strong>Duration:</strong> 
+        <section id=" project">
+            <h2 class="heading">Project Details</h2>
+            <p class="porDetails"><strong><span>Name: </span><u>Student Management</u></strong></p>
+            <p class="porDetails"><strong><u>Environment:</u></strong><span> Angular 8, TypeScript, JavaScript
+                    (ES6),
+                    Bootstrap,GitHub,Desktop GitHub, Agile and JIRA, IDE - VS Code</span></p>
+            <p class="porDetails"><strong><span>Team
+                        Size: 06; </span></strong><strong>Duration:</strong>
                 2021-1<sup>st</sup>-July till <u><i>present</i></u></p>
-            <p><b>Project Description:</b> This project is mainly used for student management in colleges, where it
+            <p class="porDetails"><b>Project Description:</b> This project is mainly used for student management in
+                colleges, where it
                 helps to manage student record like <br>
-                student registration, student update, and to see all the list of academic activities like score card and
+                student registration, student update, and to see all the list of academic activities like score card
+                and
                 attendance.</p>
-            <h2>Roles and Responsibilities</h2>
-            <ul>
+            <h2 class="heading">Roles and Responsibilities</h2>
+            <ul id="roleResponsibility">
                 <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
                 <li>Work closely with backend developers for code integration</li>
                 <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -184,46 +198,46 @@
                     retrospective meetings</li>
                 <li>involved in fixing technical issues in production environment</li>
             </ul>
-            <hr>
-
         </section>
+        <hr>
+
         <!-- Education Section -->
 
-        <section id="education">
-            <h2>Education Details</h2>
-            <table border="1">
+        <section id="eduDetails">
+            <h2 class="heading">Education Details</h2>
+            <table id="techTable">
                 <thead>
                     <strong>
                         <tr>
-                            <td><span class="tdtable"><b>Qualification</b></span></td>
-                            <td><span class="tdtable"><b>School / College</b></span></td>
-                            <td><span class="tdtable"><b>Board / University</b></span></td>
-                            <td><span class="tdtable"><b>Year</b></span></td>
-                            <td><span class="tdtable"><b>Percentage</b></span></td>
+                            <td>Qualification</td>
+                            <td>School / College</td>
+                            <td>Board / University</td>
+                            <td>Year</td>
+                            <td>Percentage</td>
                         </tr>
                     </strong>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span class="tdtable">BE</span></td>
-                        <td><span class="tdtable">Government College of Engineering Chandrapur</span></td>
-                        <td><span class="tdtable">Gadchiroli</span></td>
-                        <td><span class="tdtable">2023</span></td>
-                        <td><span class="tdtable">65.50%</span></td>
+                        <td>BE</td>
+                        <td>Government College of Engineering Chandrapur</td>
+                        <td>Gadchiroli</td>
+                        <td>2023</td>
+                        <td>65.50%</td>
                     </tr>
                     <tr>
-                        <td><span class="tdtable">Diploma</span></td>
-                        <td><span class="tdtable">Government Polytechnic Jintur, Parbhani</span></td>
-                        <td><span class="tdtable">Autonomous</span></td>
-                        <td><span class="tdtable">2020</span></td>
-                        <td><span class="tdtable">76.20%</span></td>
+                        <td>Diploma</td>
+                        <td>Government Polytechnic Jintur, Parbhani</td>
+                        <td>Autonomous</td>
+                        <td>2020</td>
+                        <td>76.20%</td>
                     </tr>
                     <tr>
-                        <td><span class="tdtable">SSC</span></td>
-                        <td><span class="tdtable">AVV High School Purna, Parbhani</span></td>
-                        <td><span class="tdtable">State Board</span></td>
-                        <td><span class="tdtable">2016</span></td>
-                        <td><span class="tdtable">64.80%</span></td>
+                        <td>SSC</td>
+                        <td>AVV High School Purna, Parbhani</td>
+                        <td>State Board</td>
+                        <td>2016</td>
+                        <td>64.80%</td>
                     </tr>
                 </tbody>
             </table>
@@ -232,11 +246,10 @@
 
         <!-- Footer section -->
         <footer>
-            <h2>Follow Me</h2>
-            <a href="https://www.instagram.com/" target="_blank"> Instagram </a>&nbsp;&nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/ashok-bhad-50b059196/" target="_blank"> LinkedIN</a>&nbsp;&nbsp;&nbsp;
-            <a href="https://www.facebook.com/" target="_blank"> Facebook</a>
-
+            <h2 class="heading">Follow Me</h2>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.linkedin.com/in/ashok-bhad-50b059196/" target="_blank"> LinkedIn</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
         </footer>
 </body>
 
