@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        label,
+        button {
+            font-size: large;
+            color: rgb(3, 86, 89);
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            border: 2px solid rgb(248, 181, 57);
+            padding: 5px 5px;
+            border-radius: 8px;
+            width: 250px;
+            text-transform: capitalize;
+            color: cadetblue;
+        }
+
+        input[type="email"] {
+            text-transform: lowercase;
+        }
+
+        button[type="submit"]:hover {
+            color: rgb(187, 124, 7);
+            border-radius: 8px;
+            border: 2px solid rgb(248, 181, 57);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Contact Me</h2>
+    <form action="">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="">Full Name </label></td>
+                    <td><input type="text"> <br></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email </label> </td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Question</label></td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td> <button type="submit">Send Question</button> </td>
+                    <td> <button type="reset">Clear Info</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

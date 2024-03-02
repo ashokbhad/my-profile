@@ -26,7 +26,7 @@
             padding: 10px;
         }
 
-        #navRobo{
+        #navRobo {
             font-family: "Roboto", sans-serif;
         }
 
@@ -42,8 +42,13 @@
             font-family: "Poppins", sans-serif;
         }
 
-        #roleResponsibility {
+        .roles {
+            list-style-type: lower-alpha;
             font-family: "Poppins", sans-serif;
+        }
+
+        .roles li {
+            padding-top: 8px;
         }
 
         .header-info {
@@ -59,6 +64,7 @@
         tr,
         th,
         td {
+            text-align: center;
             border: 2px solid rgb(217, 204, 179);
             border-collapse: collapse;
             width: 100px;
@@ -78,10 +84,21 @@
             font-family: "Poppins", sans-serif;
         }
 
-        #listSummary {
-            font-family: "Poppins", sans-serif;
+        .porDetails::selection {
+            background-color: rgb(93, 19, 162);
+        }
+
+        #listSummary li {
+            padding-inline: 10px;
+            list-style-type: none;
+        }
+
+        #listSummary li::marker {
+            content: "✍️";
+
 
         }
+        
     </style>
 </head>
 
@@ -165,7 +182,7 @@
                         <td>3</td>
                     </tr>
                 </tbody>
-            
+
             </table>
         </section>
         <hr>
@@ -188,7 +205,7 @@
                 and
                 attendance.</p>
             <h2 class="heading">Roles and Responsibilities</h2>
-            <ul id="roleResponsibility">
+            <ol class="roles">
                 <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
                 <li>Work closely with backend developers for code integration</li>
                 <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -197,7 +214,7 @@
                 <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint
                     retrospective meetings</li>
                 <li>involved in fixing technical issues in production environment</li>
-            </ul>
+            </ol>
         </section>
         <hr>
 
@@ -247,8 +264,8 @@
         <!-- Footer section -->
         <footer>
             <h2 class="heading">Follow Me</h2>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://www.linkedin.com/in/ashok-bhad-50b059196/" target="_blank"> LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/ashok-bhad-50b059196/" target="_blank">LinkedIn</a>
             <a href="https://www.facebook.com/" target="_blank">Facebook</a>
         </footer>
 </body>
