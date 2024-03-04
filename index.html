@@ -5,111 +5,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
-    <link rel="shortcut icon" href="assets/website-logo.PNG" type="image/x-icon">
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <style>
-        header {
-            padding: 20px;
-            background-color: rgb(216, 244, 245);
-            font-family: "Roboto", sans-serif;
-        }
-
-        .navtext {
-            text-decoration: none;
-            padding: 10px;
-        }
-
-        #navRobo {
-            font-family: "Roboto", sans-serif;
-        }
-
-        #resume {
-            color: orange;
-            font-weight: bolder;
-        }
-
-        .heading {
-            color: cadetblue;
-            font-style: italic;
-            text-shadow: 4px 4px 4px rgba(89, 55, 55, 0.6);
-            font-family: "Poppins", sans-serif;
-        }
-
-        .roles {
-            list-style-type: lower-alpha;
-            font-family: "Poppins", sans-serif;
-        }
-
-        .roles li {
-            padding-top: 8px;
-        }
-
-        .header-info {
-            margin-right: 40px;
-            margin-left: 10px;
-        }
-
-        #resume-text {
-            margin-left: 10px;
-        }
-
-        table,
-        tr,
-        th,
-        td {
-            text-align: center;
-            border: 2px solid rgb(217, 204, 179);
-            border-collapse: collapse;
-            width: 100px;
-        }
-
-        td,
-        th {
-            padding: 10px;
-        }
-
-        #techTable {
-            width: 50%;
-            font-family: "Poppins", sans-serif;
-        }
-
-        .porDetails {
-            font-family: "Poppins", sans-serif;
-        }
-
-        .porDetails::selection {
-            background-color: rgb(93, 19, 162);
-        }
-
-        #listSummary li {
-            padding-inline: 10px;
-            list-style-type: none;
-        }
-
-        #listSummary li::marker {
-            content: "✍️";
-
-
-        }
-        
-    </style>
+        rel="stylesheet"> -->
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
-        <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+        <i id="headeri" class="fa fa-user fa-lg" aria-hidden="true"></i>
         <span class="header-info">Ashok Bhad</span>
-        <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+        <i id="headeri" class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
         <span class="header-info">8605 7030 18</span>
-        <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+        <i id="headeri" class="fa fa-envelope fa-lg" aria-hidden="true"></i>
         <span class="header-info">ashokbhad321@gmail.com</span>
         <a href="assets/resume.pdf" download id="resume"><i class="fa fa-download fa-lg" aria-hidden="true"></i> <span
                 id="resume-text">RESUME</span> </a>
@@ -117,18 +32,20 @@
 
     <!-- Navigation Section -->
     <section>
-        <nav id="navRobo">
-            <a href="#Home"><span class="navtext"><b>HOME</b></span></a>
-            <a href="#techStack"><span class="navtext"><b>TECH STACK</b></span></a>
-            <a href="#project"><span class="navtext"><b>PROJECTS</b></span></a>
-            <a href="#education"><span class="navtext"><b>EDUCATION</b></span></a>
-            <a href="personalDetail.html" target="_blank"><span class="navtext"><b>PERSONAL DETAILS</b></span></a>
-            <a href="others.html" target="_blank"><span class="navtext"><b>OTHERS</b></span></a>
+        <nav id="navSection">
+            <ul>
+                <li><a href="#home">HOME</a> </li>
+                <li><a href="#techStack">TECH STACK</a> </li>
+                <li><a href="#project">PROJECTS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+                <li><a href="others.html" target="_blank">OTHERS</a></li>
+            </ul>
         </nav>
     </section>
 
-    <!-- Main Section -->
-    <section>
+
+    <section id="container">
         <!-- Home Section -->
         <section id="Home">
             <h2 class="heading">Professional Summary</h2>
@@ -205,7 +122,7 @@
                 and
                 attendance.</p>
             <h2 class="heading">Roles and Responsibilities</h2>
-            <ol class="roles">
+            <ol id="listRoles">
                 <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
                 <li>Work closely with backend developers for code integration</li>
                 <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -263,11 +180,19 @@
 
         <!-- Footer section -->
         <footer>
-            <h2 class="heading">Follow Me</h2>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/in/ashok-bhad-50b059196/" target="_blank">LinkedIn</a>
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <h2 class="heading">Follow Me: </h2>
+                <a href="https://www.instagram.com/?hl=en" target="_blank">
+                    <span class="social"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></span></a>
+                <a href="https://www.facebook.com/login.php/" target="_blank">
+                    <span class="social"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></span></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <span class="social"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></span></a>
         </footer>
+        <section id="copyright">
+            <!-- Copy Write Section -->
+            Copyright &copy;2024 Codemind Technology Video Communications, Inc. All rights reserved.
+        </section>
+    </section>
 </body>
 
 </html>
