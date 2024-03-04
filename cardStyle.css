@@ -1,0 +1,80 @@
+
+#heading {
+    letter-spacing: 7px;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+    background-color: rgb(4, 248, 248);
+}
+
+#container {
+    box-shadow: 10px 10px 5px 0px rgb(230, 67, 230);
+    -webkit-box-sizing: 10px 10px 5px 0px rgb(173, 100, 100);
+    -moz-box-sizing: 10px 10px 5px 0px rgb(159, 120, 120);
+    background-color: rgb(40, 218, 180);
+    width: 690px;
+    margin: 20px auto;
+    border-radius: 40px;
+    padding: 18px;
+}
+
+#text {
+    display: inline-block;
+    margin: 10px;
+}
+
+#text li {
+    list-style-type: none;
+    font-weight: bold;
+    font-style: large;
+    margin: 10px;
+}
+
+#text li::marker{
+    padding: 10px;
+    content: "✍️  ";
+
+}
+
+#image {
+    display: inline;
+    margin-left: 20px;
+}
+
+#box{
+    box-shadow: 10px 10px 5px 0px rgb(172, 37, 177);
+    -webkit-box-sizing: 10px 10px 5px 0px rgb(209, 164, 164);
+    -moz-box-sizing: 10px 10px 5px 0px rgb(201, 162, 162);
+    background-color: rgb(60, 46, 46);
+    border-radius: 40px;
+    width: 690px;
+    margin: 20px auto;
+    padding: 18px;
+    color: rgb(191, 202, 202);
+}
+
+#arrow{
+    display: inline-block;
+    margin-left: 150px;
+}
+
+
+#header{
+    display: inline-block;
+}
+
+#header li{
+    list-style-type: none;
+    margin: 10px;
+    font-weight: bold;
+    font-style: large;
+}
+
+#content{
+    list-style-type: none;
+    margin-top: 25px;
+    font-weight: bolder;
+    font-style: larger;
+    font-size: 30px;
+    color: rgb(6, 149, 149);
+}
