@@ -26,7 +26,7 @@ header {
     text-shadow: 4px 4px 4px rgba(89, 55, 55, 0.6);
     font-family: "Roboto", sans-serif;
     display: inline-block;
-    padding-right: 1px;
+    padding-right: 6px;
 }
 
 .header-info {
@@ -101,7 +101,7 @@ th {
 }
 
 #listSummary li::marker {
-    content: "✍️";
+    content: "📌";
 }
 
 #listRoles li {
@@ -111,7 +111,7 @@ th {
 }
 
 #listRoles li::marker {
-    content: "✍️";
+    content: "✅";
 }
 
 .porDetails {
