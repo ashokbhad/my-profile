@@ -10,8 +10,10 @@
 /* Header Section */
 
 header {
+    width: 780px;
     padding: 8px;
     background-color: rgb(73, 44, 44);
+    position: fixed;
 
 }
 
@@ -21,9 +23,9 @@ header {
 }
 
 .heading {
-    color: rgb(30, 45, 46);
+    color: rgb(6, 58, 65);
     font-style: italic;
-    text-shadow: 4px 4px 4px rgba(89, 55, 55, 0.6);
+    text-shadow: 4px 4px 4px rgba(165, 89, 89, 0.6);
     font-family: "Roboto", sans-serif;
     display: inline-block;
     padding-right: 6px;
@@ -46,22 +48,26 @@ header {
 /* Navigation Section */
 
 #navSection {
-    padding: 10px;
+    z-index: -1;
+    width: 100%;
+    padding: 5px;
     text-align: right;
+    position: fixed;
+    background-color: rgb(19, 25, 25);
 }
 
 #navSection li {
     list-style-type: none;
     display: inline;
-    margin-right: 30px;
+    margin-left: 40px;
     font-weight: bold;
 }
 
 #navSection a {
     text-decoration: none;
     letter-spacing: 1.5px;
-    word-spacing: 10px;
-    color: rgb(254, 20, 137);
+    word-spacing: 2px;
+    color: rgb(250, 3, 126);
 }
 
 /* Container Section */
@@ -79,6 +85,7 @@ td {
     text-align: center;
     border: 2px solid rgb(217, 204, 179);
     border-collapse: collapse;
+    border-color: rgb(51, 154, 175);
     width: 100px;
 }
 
@@ -118,6 +125,24 @@ th {
     font-family: "Roboto", sans-serif;
 }
 
-#copyright{
-    color: rgb(246, 62, 62);
+#copyright {
+    color: rgb(255, 23, 23);
+}
+
+#whatsApp {
+    margin-left: 80px;
+    padding-left: 680px;
+    padding-bottom: 100px;
+    position: fixed;
+    bottom: 0px;
+    color: rgb(0, 248, 58);
+
+}
+
+#msg{
+    margin-left: 80px;
+    padding-left: 680px;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0px;
 }
