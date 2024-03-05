@@ -11,7 +11,7 @@
 
 header {
     padding: 8px;
-    background-color: rgb(54, 45, 45);
+    background-color: rgb(73, 44, 44);
 
 }
 
@@ -25,6 +25,8 @@ header {
     font-style: italic;
     text-shadow: 4px 4px 4px rgba(89, 55, 55, 0.6);
     font-family: "Roboto", sans-serif;
+    display: inline-block;
+    padding-right: 1px;
 }
 
 .header-info {
@@ -114,4 +116,8 @@ th {
 
 .porDetails {
     font-family: "Roboto", sans-serif;
+}
+
+#copyright{
+    color: rgb(246, 62, 62);
 }

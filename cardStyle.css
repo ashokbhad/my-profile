@@ -18,6 +18,11 @@
     padding: 18px;
 }
 
+#textHeading{
+    text-align: center;
+    padding-left: 125px;
+}
+
 #text {
     display: inline-block;
     margin: 10px;
@@ -39,6 +44,8 @@
 #image {
     display: inline;
     margin-left: 20px;
+    width: 250px;
+    height: 210px;
 }
 
 #box{
@@ -77,4 +84,10 @@
     font-style: larger;
     font-size: 30px;
     color: rgb(6, 149, 149);
+}
+
+#img2{
+    width: 100px;
+    height: 80px;
+    padding-left: 100px;
 }
