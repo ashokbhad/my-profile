@@ -14,7 +14,6 @@ header {
     padding: 8px;
     background-color: rgb(73, 44, 44);
     position: fixed;
-
 }
 
 #resume {
@@ -75,7 +74,6 @@ header {
 #container {
     width: 800px;
     margin: 20px auto;
-
 }
 
 table,
@@ -98,8 +96,6 @@ th {
     width: 50%;
     font-family: "Roboto", sans-serif;
 }
-
-
 
 #listSummary li {
     padding-inline: 10px;
@@ -136,10 +132,9 @@ th {
     position: fixed;
     bottom: 0px;
     color: rgb(0, 248, 58);
-
 }
 
-#msg{
+#msg {
     margin-left: 80px;
     padding-left: 680px;
     padding-bottom: 20px;
