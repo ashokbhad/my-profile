@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Item</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Madimi+One&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .card {
+            width: 400px;
+            height: 390px;
+            border: 2.6px solid rgb(95, 95, 97);
+            border-radius: 20px;
+            margin: 20px auto;
+        }
+
+        #item-photo {
+            width: 100%;
+            border-radius: 20px;
+            padding: 8px;
+        }
+
+        .item-text {
+            padding: 8px;
+            border-radius: 20px;
+            padding-bottom: 0px;
+            color: rgb(4, 215, 25);
+            font-family: "Exo 2", sans-serif;
+        }
+
+        #bs-seller {
+            color: rgb(253, 12, 229);
+            background-color: rgb(20, 253, 253);
+            border-radius: 20px;
+            border: 2px solid rgb(255, 21, 0);
+            padding: 5px 15px;
+            bottom: 220px;
+            left: 15px;
+            position: relative;
+        }
+
+        #m-try {
+            color: rgb(253, 12, 229);
+            background-color: rgb(20, 253, 253);
+            border-radius: 20px;
+            border: 2px solid rgb(255, 21, 0);
+            padding: 5px 15px;
+            bottom: 70px;
+            left: 200px;
+            position: relative
+        }
+    </style>
+</head>
+
+<body>
+    <section class="card">
+        <img id="item-photo" src="https://source.unsplash.com/1600x1000/?burger">
+        <button id="bs-seller">Best Seller</button>
+        <button id="m-try">Must Try</button>
+        <section class="item-text">
+            <h2>Veg Supreme Burger</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </section>
+    </section>
+</body>
+
+</html>
