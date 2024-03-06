@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Item</title>
+    <title>Food Item & Card</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Madimi+One&display=swap');
 
@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
 
-        .card {
+        .card1 {
             width: 400px;
             height: 390px;
             border: 2.6px solid rgb(95, 95, 97);
@@ -20,7 +20,7 @@
             margin: 20px auto;
         }
 
-        #item-photo {
+        #item-photo1 {
             width: 100%;
             border-radius: 20px;
             padding: 8px;
@@ -55,17 +55,56 @@
             left: 200px;
             position: relative
         }
+
+        .card2 {
+            width: 400px;
+            height: 350px;
+            border: 2.6px solid rgb(22, 22, 198);
+            border-radius: 20px;
+            margin: 20px auto;
+
+        }
+
+        #item-photo2 {
+            width: 85%;
+            border-radius: 20px;
+            padding-left: 150px;
+            padding-right: 100px;
+        }
+
+        #card-text {
+            box-shadow: 13px 13px 10px -8px rgb(82, 80, 80);
+            background-color: #387a80;
+            color: #FFFFFA;
+            text-align: center;
+            padding: 8px;
+            border-radius: 20px;
+            padding-bottom: 0px;
+            font-family: "Exo 2", sans-serif;
+        }
     </style>
 </head>
 
 <body>
-    <section class="card">
-        <img id="item-photo" src="https://source.unsplash.com/1600x1000/?burger">
+    <section class="card1">
+        <img id="item-photo1" src="https://source.unsplash.com/1600x1000/?burger">
         <button id="bs-seller">Best Seller</button>
         <button id="m-try">Must Try</button>
         <section class="item-text">
             <h2>Veg Supreme Burger</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </section>
+    </section>
+
+    <section class="card2">
+        <img id="item-photo2" src="assets/developer.png">
+        <section id="card-text">
+            <h3>WILLIAM HENRY GATES</h3>
+            <h4>Microsoft Co-Founder</h4>
+        <section id="paragraph">
+                <p>FOR PEOPLE AND PROJECT <br> TRANSFORMATION</p>
+        </section>
+
         </section>
     </section>
 </body>
