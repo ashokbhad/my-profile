@@ -6,53 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Details</title>
     <style>
-        #heading{
-            color: rgb(253, 9, 103);
-            padding-left: 30px;
-        }
-        #name{
-            color: rgb(44, 4, 243);
-            padding-left: 50px;
+        * {
+            box-sizing: border-box;
         }
 
-        img{
-            padding-left: 35px;
-            width: 120px;
-            height: 125px;
+        #container {
+            padding-right: 10px;
+            padding-left: 10px;
+            display: inline-block;
+            border-radius: 20px;
+            border: 3px solid rgb(115, 124, 125);
         }
 
-        #nameList{
-            color: rgb(250, 11, 87);
-            list-style-type: circle;
+        #heading {
+            font-family: fantasy;
+            letter-spacing: 1.8px;
+            color: rgb(13, 181, 30);
+            padding-left: 28px;
         }
 
-        .nameList{
+        #name {
+            font-style: italic;
+            font-size: large;
+            color: rgb(110, 4, 122);
+            padding-left: 93px;
+        }
+
+        .paragraphs {
+            font-family: cursive;
+            color: rgb(44, 147, 199);
+            font-weight: bolder;
+        }
+
+        .underline {
+            color: coral;
+        }
+
+        img {
+            padding-left: 88px;
+            width: 220px;
+            height: 130px;
+        }
+
+        details {
+            color: rgb(144, 3, 3);
+        }
+
+        #details {
+            font-family: cursive;
+            color: rgb(13, 92, 238);
+        }
+
+        #nameList {
+            color: rgb(250, 11, 242);
+            list-style-type: disc;
+            font-family: cursive;
+            font-weight: bolder;
+        }
+
+        .nameList {
             font-style: bold;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(95, 226, 43);
+            color: rgb(226, 43, 43);
         }
-
     </style>
 </head>
 
-<body>
-    <h2 id="heading">Profile Photo</h2>
+<body id="container">
+    <h2 id="heading"><b>Codemind Technology</b></h2>
     <img src="assets/profile-photo.png" alt="image">
-    <p id="name">Ashok Bhad</p>
-    <p><b>Mobile Number:</b> 8605 7030 18</p>
-    <p><b>Email:</b> ashokbhad321@gmail.com</p>
-    <p><b>Email:</b> Feb-27-2000</p>
-    <p><b>Address:</b> Marunji Village, Pune</p>
-    <details>
-        <summary>
-            <b>Family Details</b>
-            <ul id="nameList">
-                <li>Father Name: <span class="nameList">Damodhar Bhad</span></li>
-                <li>Mother Name: <span class="nameList">Suman Bhad</span></li>
-                <li>Brother Name: <span class="nameList">Balasaheb Bhad</span></li>
-            </ul>
-        </summary>
-    </details>
+    <p id="name"><b> Er. Ashok Bhad</b></p>
+    <p class="paragraphs"><u class="underline">Mobile Number</u>: 8605 7030 18</p>
+    <p class="paragraphs"><u class="underline">Email</u>: <u>ashokbhad321@gmail.com</u></p>
+    <p class="paragraphs"><u class="underline">DOB</u>: Feb-27-2000</p>
+    <p class="paragraphs"><u class="underline">Address</u>: Marunji Village, Pune</p>
+
+    <b id="details"><u>Family Details</u></b>
+    <ul id="nameList">
+        <li>Father Name: <span class="nameList">Damodhar Bhad</span></li>
+        <li>Mother Name: <span class="nameList">Suman Bhad</span></li>
+        <li>Brother Name: <span class="nameList">Balasaheb Bhad</span></li>
+    </ul>
+
 </body>
 
 </html>
