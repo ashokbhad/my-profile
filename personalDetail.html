@@ -5,23 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Details</title>
+    <style>
+        #heading{
+            color: rgb(253, 9, 103);
+            padding-left: 30px;
+        }
+        #name{
+            color: rgb(44, 4, 243);
+            padding-left: 50px;
+        }
+
+        img{
+            padding-left: 35px;
+            width: 120px;
+            height: 125px;
+        }
+
+        #nameList{
+            color: rgb(250, 11, 87);
+            list-style-type: circle;
+        }
+
+        .nameList{
+            font-style: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(95, 226, 43);
+        }
+
+    </style>
 </head>
 
 <body>
-    <h2>Profile Photo:</h2>
-    <img src="assets/developer.png" alt="">
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ashok Bhad</p>
-    <p><strong>Mobile Number:</strong> 8605 7030 18</p>
-    <p><strong>Email:</strong> ashokbhad321@gmail.com</p>
-    <p><strong>Date of Birth:</strong> Feb-27-2000</p>
-    <p><strong>Address: </strong> Marunji Village, Pune</p>
+    <h2 id="heading">Profile Photo</h2>
+    <img src="assets/profile-photo.png" alt="image">
+    <p id="name">Ashok Bhad</p>
+    <p><b>Mobile Number:</b> 8605 7030 18</p>
+    <p><b>Email:</b> ashokbhad321@gmail.com</p>
+    <p><b>Email:</b> Feb-27-2000</p>
+    <p><b>Address:</b> Marunji Village, Pune</p>
     <details>
         <summary>
-            <span><strong>Family Details</strong></span>
-            <ul>
-                <li>Father Name: Damodhar Bhad</li>
-                <li>Mother Name: Suman Bhad</li>
-                <li>Brother Name: Balasaheb Bhad</li>
+            <b>Family Details</b>
+            <ul id="nameList">
+                <li>Father Name: <span class="nameList">Damodhar Bhad</span></li>
+                <li>Mother Name: <span class="nameList">Suman Bhad</span></li>
+                <li>Brother Name: <span class="nameList">Balasaheb Bhad</span></li>
             </ul>
         </summary>
     </details>
